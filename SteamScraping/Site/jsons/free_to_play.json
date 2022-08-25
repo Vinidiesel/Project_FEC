@@ -1,0 +1,362 @@
+[
+    {
+        "nome": "\u6d77\u4e4b\u4e50\u7ae02-\u7eaf\u6b63\u7aef\u6e38",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2097870/capsule_184x69.jpg?t=1661398273",
+        "plataforma": "win",
+        "tags": "RPG, MMORPG, Exploration, Hack and Slash"
+    },
+    {
+        "nome": "My Sticker Book",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2088270/capsule_184x69.jpg?t=1661350078",
+        "plataforma": "win",
+        "tags": "Puzzle, Psychological Horror, Cute, Female Protagonist"
+    },
+    {
+        "nome": "A.V.A Global",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1473480/capsule_184x69.jpg?t=1661412988",
+        "plataforma": "win",
+        "tags": "Free to Play, FPS, Shooter, Multiplayer"
+    },
+    {
+        "nome": "Guild Wars 2",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1284210/capsule_184x69.jpg?t=1661291821",
+        "plataforma": "win",
+        "tags": "Adventure, MMORPG, RPG, Fantasy"
+    },
+    {
+        "nome": "MergeCrafter",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1964220/capsule_184x69.jpg?t=1661274022",
+        "plataforma": "win, mac",
+        "tags": "Casual, Puzzle, Match 3, Relaxing"
+    },
+    {
+        "nome": "\u4e50\u6e38\u4e09\u56fd",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2072320/capsule_184x69.jpg?t=1661304431",
+        "plataforma": "win",
+        "tags": "Casual, Card Battler, Turn-Based Tactics, PvP"
+    },
+    {
+        "nome": "Hamster Playground",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1442670/capsule_184x69.jpg?t=1661189933",
+        "plataforma": "win, mac, linux",
+        "tags": "Early Access, Character Customization, Controller, Family Friendly"
+    },
+    {
+        "nome": "Outbreak Island: Pendulum",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1804630/capsule_184x69.jpg?t=1661330539",
+        "plataforma": "win",
+        "tags": "Survival, Open World Survival Craft, Open World, Crafting"
+    },
+    {
+        "nome": "Galaxy Life",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1927780/capsule_184x69.jpg?t=1661290309",
+        "plataforma": "win",
+        "tags": "Early Access, Strategy, City Builder, Wargame"
+    },
+    {
+        "nome": "Quaver",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/980610/capsule_184x69.jpg?t=1661002225",
+        "plataforma": "win, mac, linux",
+        "tags": "Free to Play, Rhythm, Indie, Music"
+    },
+    {
+        "nome": "Crustacean Nations",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2063680/capsule_184x69.jpg?t=1660932044",
+        "plataforma": "win",
+        "tags": "Strategy, Casual, Action RTS, Base Building"
+    },
+    {
+        "nome": "Tina & Rook! Cookie Quest!",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2092750/capsule_184x69.jpg?t=1660928603",
+        "plataforma": "win",
+        "tags": "Casual, Point & Click, Puzzle, 2D Platformer"
+    },
+    {
+        "nome": "OneBit Adventure",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1688320/capsule_184x69.jpg?t=1661136776",
+        "plataforma": "win, mac",
+        "tags": "Roguelike, Dungeon Crawler, Roguelite, Turn-Based Strategy"
+    },
+    {
+        "nome": "\u5e78\u8fd0\u9ebb\u5c06",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1812780/capsule_184x69.jpg?t=1660877057",
+        "plataforma": "win",
+        "tags": "Casual, Sports, Simulation, Strategy"
+    },
+    {
+        "nome": "\u4e3b\u5bb0\u98de\u4ed9-\u517b\u809d\u62a4\u80be\u7545\u5feb\u4fee\u4ed9",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1845260/capsule_184x69.jpg?t=1660876025",
+        "plataforma": "win",
+        "tags": "Free to Play, RPG, Massively Multiplayer, Trading Card Game"
+    },
+    {
+        "nome": "Lost Ark",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1599340/capsule_184x69.jpg?t=1661270493",
+        "plataforma": "win",
+        "tags": "MMORPG, Free to Play, Action RPG, RPG"
+    },
+    {
+        "nome": "Counter-Strike: Global Offensive",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_184x69.jpg?t=1641233427",
+        "plataforma": "win, mac, linux",
+        "tags": "FPS, Shooter, Multiplayer, Competitive"
+    },
+    {
+        "nome": "Destiny 2",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/capsule_184x69_alt_assets_0.jpg?t=1661325878",
+        "plataforma": "win",
+        "tags": "Free to Play, Open World, Looter Shooter, FPS"
+    },
+    {
+        "nome": "Apex Legends\u2122",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1172470/capsule_184x69.jpg?t=1660674992",
+        "plataforma": "win",
+        "tags": "Free to Play, Multiplayer, Battle Royale, Shooter"
+    },
+    {
+        "nome": "PUBG: BATTLEGROUNDS",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/578080/capsule_184x69.jpg?t=1659057136",
+        "plataforma": "win",
+        "tags": "Survival, Shooter, Multiplayer, Battle Royale"
+    },
+    {
+        "nome": "Path of Exile",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/238960/capsule_184x69.jpg?t=1660949087",
+        "plataforma": "win, mac",
+        "tags": "Free to Play, Action RPG, Hack and Slash, RPG"
+    },
+    {
+        "nome": "SMITE\u00ae",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/386360/capsule_184x69.jpg?t=1661258233",
+        "plataforma": "win",
+        "tags": "Free to Play, MOBA, Multiplayer, Action"
+    },
+    {
+        "nome": "War Robots",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/767560/capsule_184x69.jpg?t=1661416850",
+        "plataforma": "win",
+        "tags": "Free to Play, Action, Robots, Multiplayer"
+    },
+    {
+        "nome": "MultiVersus",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1818750/capsule_184x69.jpg?t=1661366157",
+        "plataforma": "win",
+        "tags": "Multiplayer, 2D Fighter, Co-op, Action"
+    },
+    {
+        "nome": "Dota 2",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/570/capsule_184x69.jpg?t=1658774750",
+        "plataforma": "win, mac, linux",
+        "tags": "Free to Play, MOBA, Multiplayer, Strategy"
+    },
+    {
+        "nome": "Warframe",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/230410/capsule_184x69.jpg?t=1661184982",
+        "plataforma": "win",
+        "tags": "Free to Play, Action RPG, Looter Shooter, Action"
+    },
+    {
+        "nome": "Guild Wars 2",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1284210/capsule_184x69.jpg?t=1661291821",
+        "plataforma": "win",
+        "tags": "Adventure, MMORPG, RPG, Fantasy"
+    },
+    {
+        "nome": "A.V.A Global",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1473480/capsule_184x69.jpg?t=1661412988",
+        "plataforma": "win",
+        "tags": "Free to Play, FPS, Shooter, Multiplayer"
+    },
+    {
+        "nome": "eFootball\u2122 2023",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1665460/capsule_184x69.jpg?t=1661403982",
+        "plataforma": "win",
+        "tags": "Free to Play, Soccer, Sports, Simulation"
+    },
+    {
+        "nome": "Brawlhalla",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/291550/capsule_184x69.jpg?t=1658951133",
+        "plataforma": "win, mac",
+        "tags": "Free to Play, Multiplayer, Fighting, Casual"
+    },
+    {
+        "nome": "Counter-Strike: Global Offensive",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_184x69.jpg?t=1641233427",
+        "plataforma": "win, mac, linux",
+        "tags": "FPS, Shooter, Multiplayer, Competitive"
+    },
+    {
+        "nome": "Dota 2",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/570/capsule_184x69.jpg?t=1658774750",
+        "plataforma": "win, mac, linux",
+        "tags": "Free to Play, MOBA, Multiplayer, Strategy"
+    },
+    {
+        "nome": "Apex Legends\u2122",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1172470/capsule_184x69.jpg?t=1660674992",
+        "plataforma": "win",
+        "tags": "Free to Play, Multiplayer, Battle Royale, Shooter"
+    },
+    {
+        "nome": "PUBG: BATTLEGROUNDS",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/578080/capsule_184x69.jpg?t=1659057136",
+        "plataforma": "win",
+        "tags": "Survival, Shooter, Multiplayer, Battle Royale"
+    },
+    {
+        "nome": "Destiny 2",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/capsule_184x69_alt_assets_0.jpg?t=1661325878",
+        "plataforma": "win",
+        "tags": "Free to Play, Open World, Looter Shooter, FPS"
+    },
+    {
+        "nome": "MultiVersus",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1818750/capsule_184x69.jpg?t=1661366157",
+        "plataforma": "win",
+        "tags": "Multiplayer, 2D Fighter, Co-op, Action"
+    },
+    {
+        "nome": "Lost Ark",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1599340/capsule_184x69.jpg?t=1661270493",
+        "plataforma": "win",
+        "tags": "MMORPG, Free to Play, Action RPG, RPG"
+    },
+    {
+        "nome": "War Thunder",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/236390/capsule_184x69.jpg?t=1657292099",
+        "plataforma": "win, mac, linux",
+        "tags": "Free to Play, Vehicular Combat, Combat, VR"
+    },
+    {
+        "nome": "Team Fortress 2",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/440/capsule_184x69.jpg?t=1659929900",
+        "plataforma": "win, mac, linux",
+        "tags": "Free to Play, Hero Shooter, Multiplayer, FPS"
+    },
+    {
+        "nome": "Path of Exile",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/238960/capsule_184x69.jpg?t=1660949087",
+        "plataforma": "win, mac",
+        "tags": "Free to Play, Action RPG, Hack and Slash, RPG"
+    },
+    {
+        "nome": "Yu-Gi-Oh! Master Duel",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1449850/capsule_184x69.jpg?t=1648616316",
+        "plataforma": "win",
+        "tags": "Card Game, Free to Play, Strategy, Trading Card Game"
+    },
+    {
+        "nome": "Warframe",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/230410/capsule_184x69.jpg?t=1661184982",
+        "plataforma": "win",
+        "tags": "Free to Play, Action RPG, Looter Shooter, Action"
+    },
+    {
+        "nome": "Brawlhalla",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/291550/capsule_184x69.jpg?t=1658951133",
+        "plataforma": "win, mac",
+        "tags": "Free to Play, Multiplayer, Fighting, Casual"
+    },
+    {
+        "nome": "Aim Lab",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/714010/capsule_184x69.jpg?t=1657493457",
+        "plataforma": "win",
+        "tags": "Free to Play, FPS, Shooter, Simulation"
+    },
+    {
+        "nome": "World of Tanks Blitz",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/444200/capsule_184x69.jpg?t=1660733379",
+        "plataforma": "win, mac",
+        "tags": "Tanks, Free to Play, Action, Multiplayer"
+    },
+    {
+        "nome": "UnHappy Place",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2106680/capsule_184x69.jpg?t=1661426562",
+        "plataforma": "win",
+        "tags": "Casual, Emotional, 2.5D, Point & Click"
+    },
+    {
+        "nome": "Beach Island Deluxe",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2105960/capsule_184x69.jpg?t=1659501806",
+        "plataforma": "win",
+        "tags": "Exploration, 3D Platformer, Action, Casual"
+    },
+    {
+        "nome": "Asteroid",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2020850/capsule_184x69.jpg?t=1660945162",
+        "plataforma": "win, linux",
+        "tags": "Early Access, Open World, Top-Down Shooter, Action RPG"
+    },
+    {
+        "nome": "FAREWELL SEN",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2025650/capsule_184x69.jpg?t=1657072368",
+        "plataforma": "win",
+        "tags": "RPG, 2D, Top-Down, Linear"
+    },
+    {
+        "nome": "Double Damnation",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1015190/capsule_184x69.jpg?t=1660310099",
+        "plataforma": "win",
+        "tags": "Co-op, Metroidvania, Controller, 2D Platformer"
+    },
+    {
+        "nome": "Joint War",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1681730/capsule_184x69.jpg?t=1661352866",
+        "plataforma": "win",
+        "tags": "Action, eSports, Shooter, FPS"
+    },
+    {
+        "nome": "Party Pie: Free Pie",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2009470/capsule_184x69.jpg?t=1661139521",
+        "plataforma": "win",
+        "tags": "Racing, 3D Platformer, PvP, Casual"
+    },
+    {
+        "nome": "Interquel\u5e55\u9593\u6298",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2115510/capsule_184x69.jpg?t=1660886122",
+        "plataforma": "win",
+        "tags": "Casual, RPG, Interactive Fiction, Word Game"
+    },
+    {
+        "nome": "ToS Gamepad Tester",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2104320/capsule_184x69.jpg?t=1661358986",
+        "plataforma": "win",
+        "tags": "Casual, Software, Utilities, 2D"
+    },
+    {
+        "nome": "\u673a\u52a8\u6218\u7ebf",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2079940/capsule_184x69.jpg?t=1657677583",
+        "plataforma": "win",
+        "tags": "Early Access, Casual, Adventure, Simulation"
+    },
+    {
+        "nome": "Dark Egg",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2092620/capsule_184x69.jpg?t=1660505533",
+        "plataforma": "win",
+        "tags": "Text-Based, Choose Your Own Adventure, Surreal, Exploration"
+    },
+    {
+        "nome": "Itchy Scratchy",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1992580/capsule_184x69.jpg?t=1661194509",
+        "plataforma": "win",
+        "tags": "Simulation, Action, Horror, Surreal"
+    },
+    {
+        "nome": "AL QMRAH RESTAURANT",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2071300/capsule_184x69.jpg?t=1660714099",
+        "plataforma": "win",
+        "tags": "Action, Strategy, Arcade, 3D"
+    },
+    {
+        "nome": "Engine Evolution 2022",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1871990/capsule_184x69.jpg?t=1659453212",
+        "plataforma": "win",
+        "tags": "Early Access, Action, Racing, PvP"
+    },
+    {
+        "nome": "\u6211\u662f\u5927\u5b98\u4eba",
+        "imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2103160/capsule_184x69.jpg?t=1660789678",
+        "plataforma": "win",
+        "tags": "Strategy, RPG, Casual, Simulation"
+    }
+]

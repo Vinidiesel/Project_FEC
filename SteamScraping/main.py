@@ -50,7 +50,7 @@ for jogo in jogos:
     jogo_json.append(jogo.__dict__)
 
 # salva no arquivo a lista de jogos
-arquivo = open('./free_to_play_{}.json'.format(datetime.now().strftime("%Y%m%d")), 'w', encoding='utf-8')
+arquivo = open('./Site/jsons/free_to_play.json', 'w', encoding='utf-8')
 json.dump(jogo_json, arquivo, indent=4)
 arquivo.close()
 print("Arquivo JSON gerado com sucesso!")
