@@ -24,9 +24,19 @@
 <body>
     <br>
     <h1>Resultados da busca realizada às <?php echo date('H:i'); ?></h1>
+    <?php 
+        foreach ($parsedJson as $jogo) {
+        ?>
+        <div class="cards">
+            <img src="<?php echo $jogo['imagem']; ?>" alt="">
+            <hr>
+            <br>
+            <br>
+            <p class=""><?php echo $jogo['nome']; ?></p>
+        </div> 
+    <?php
+        }
+    ?>
     
-    <div class="cards">
-        
-    </div>
 </body>
 </html>

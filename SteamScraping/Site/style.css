@@ -21,10 +21,9 @@ h1 {
 .cards {
     
     padding: 20px;
-    max-width: 250px;
-    min-height: 300px;
+    max-width: 300px;
+    min-height: 350px;
     border: 2px solid;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     display: flex;
