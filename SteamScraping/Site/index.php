@@ -60,7 +60,6 @@ $busca = $_POST['busca'];
             case 'todas':
             foreach ($parsedJson as $jogo) {
             ?>
-
                 <div class="card">
                     <div class="topCard">
                         <h2 class="title"><?php echo $jogo['nome']; ?></h2>
@@ -83,7 +82,6 @@ $busca = $_POST['busca'];
                 foreach ($parsedJson as $jogo) {
                     if (in_array('mac', $jogo) || in_array('win, mac', $jogo) || in_array('win, mac, linux', $jogo) || in_array('mac, linux', $jogo)){
                     ?>
-            
                         <div class="card">
                             <div class="topCard">
                                 <h2 class="title"><?php echo $jogo['nome']; ?></h2>
@@ -107,7 +105,6 @@ $busca = $_POST['busca'];
                 foreach ($parsedJson as $jogo) {
                     if (in_array('win', $jogo) || in_array('win, mac', $jogo) || in_array('win, mac, linux', $jogo)){
                     ?>
-            
                         <div class="card">
                             <div class="topCard">
                                 <h2 class="title"><?php echo $jogo['nome']; ?></h2>
@@ -131,7 +128,6 @@ $busca = $_POST['busca'];
                 foreach ($parsedJson as $jogo) {
                     if (in_array('linux', $jogo) || in_array('win, linux', $jogo) || in_array('win, mac, linux', $jogo) || in_array('mac, linux', $jogo)){
                     ?>
-            
                         <div class="card">
                             <div class="topCard">
                                 <h2 class="title"><?php echo $jogo['nome']; ?></h2>
@@ -156,7 +152,6 @@ $busca = $_POST['busca'];
         foreach ($parsedJson as $jogo) {
             if (in_array($busca, $jogo)){
             ?>
-    
                 <div class="card">
                     <div class="topCard">
                         <h2 class="title"><?php echo $jogo['nome']; ?></h2>
