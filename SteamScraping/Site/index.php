@@ -24,14 +24,18 @@ $parsedJson = json_decode($get_file_data, true);
 
 <body>
     <br>
-    <h1>Resultados da busca realizada às <?php echo date('H:i'); ?></h1>
+    <h1>Resultados da busca realizada às <?php
+    date_default_timezone_set('America/Sao_Paulo');
+     echo date('H:i'); ?></h1>
     <h1>Foram encontrados: <?php echo count($parsedJson); ?> jogos!</h1>
     <br>
     <br>
     <br>
     <div class="content">
         <?php
+        $ola = 'Farmer Against Potatoes Idle';
         foreach ($parsedJson as $jogo) {
+            if(in_array($ola, $jogo)){
         ?>
 
             <div class="card">
@@ -50,6 +54,7 @@ $parsedJson = json_decode($get_file_data, true);
                 </div>
             </div>
         <?php
+            }
         }
         ?>
     </div>
