@@ -41,8 +41,8 @@ $parsedJson = json_decode($get_file_data, true);
 </form>
 
 <?php
-$plataforma = $_POST['plataformas'];
-$busca = $_POST['busca'];
+$plataforma = $_POST['plataformas'] ?? null;
+$busca = $_POST['busca'] ?? null;
 ?>
 
     <br>
@@ -147,6 +147,26 @@ $busca = $_POST['busca'];
                     }
                 }
             break;
+            default:
+            foreach ($parsedJson as $jogo) {
+                ?>
+                    <div class="card">
+                        <div class="topCard">
+                            <h2 class="title"><?php echo $jogo['nome']; ?></h2>
+                            <span class="secondTitle"></span>
+                        </div>
+                        <div class="mediumCard"><img class="imgGame" src="<?php echo $jogo['imagem']; ?>" alt=""></div>
+                        <div class="bottomCard">
+                            <p class="bottomText"><b>Plataforma(s) suportada(s):</b> <?php echo $jogo['plataforma'] . "."; ?></p>
+                            <div class="tagsGame">
+                                <ul>
+                                    <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                <?php
+            }
         }
     }else{
         foreach ($parsedJson as $jogo) {
