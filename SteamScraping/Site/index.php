@@ -23,6 +23,28 @@ $parsedJson = json_decode($get_file_data, true);
 </head>
 
 <body>
+<form method="post" action="">
+<label for="Plataformas"> Escolha uma plataforma</label>
+<select name="plataformas" id="plataformas">
+  <option value="todas">Todas</option>
+  <option value="mac">Mac</option>
+  <option value="win">Win</option>
+  <option value="linux">Linux</option>
+</select>
+<input type="submit" name="submit" value="Enviar"/>
+</form>
+
+<form method="post" action="">
+<label for="site-search">Coloque o nome do jogo:</label>
+<input type="search" id="site-search" name="busca">
+<input type="submit" name="submit" value="Enviar"/>
+</form>
+
+<?php
+$plataforma = $_POST['plataformas'];
+$busca = $_POST['busca'];
+?>
+
     <br>
     <h1>Resultados da busca realizada às <?php
     date_default_timezone_set('America/Sao_Paulo');
@@ -33,29 +55,127 @@ $parsedJson = json_decode($get_file_data, true);
     <br>
     <div class="content">
         <?php
-        $ola = 'Farmer Against Potatoes Idle';
-        foreach ($parsedJson as $jogo) {
-            if(in_array($ola, $jogo)){
-        ?>
+        if ($busca == null){
+            switch ($plataforma){
+            case 'todas':
+            foreach ($parsedJson as $jogo) {
+            ?>
 
-            <div class="card">
-                <div class="topCard">
-                    <h2 class="title"><?php echo $jogo['nome']; ?></h2>
-                    <span class="secondTitle"></span>
-                </div>
-                <div class="mediumCard"><img class="imgGame" src="<?php echo $jogo['imagem']; ?>" alt=""></div>
-                <div class="bottomCard">
-                    <p class="bottomText"><b>Plataforma(s) suportada(s):</b> <?php echo $jogo['plataforma'] . "."; ?></p>
-                    <div class="tagsGame">
-                        <ul>
-                            <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
-                        </ul>
+                <div class="card">
+                    <div class="topCard">
+                        <h2 class="title"><?php echo $jogo['nome']; ?></h2>
+                        <span class="secondTitle"></span>
+                    </div>
+                    <div class="mediumCard"><img class="imgGame" src="<?php echo $jogo['imagem']; ?>" alt=""></div>
+                    <div class="bottomCard">
+                        <p class="bottomText"><b>Plataforma(s) suportada(s):</b> <?php echo $jogo['plataforma'] . "."; ?></p>
+                        <div class="tagsGame">
+                            <ul>
+                                <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        <?php
+            <?php
+            }
+            break;
+            case 'mac':
+                foreach ($parsedJson as $jogo) {
+                    if (in_array('mac', $jogo) || in_array('win, mac', $jogo) || in_array('win, mac, linux', $jogo) || in_array('mac, linux', $jogo)){
+                    ?>
+            
+                        <div class="card">
+                            <div class="topCard">
+                                <h2 class="title"><?php echo $jogo['nome']; ?></h2>
+                                <span class="secondTitle"></span>
+                            </div>
+                            <div class="mediumCard"><img class="imgGame" src="<?php echo $jogo['imagem']; ?>" alt=""></div>
+                            <div class="bottomCard">
+                                <p class="bottomText"><b>Plataforma(s) suportada(s):</b> <?php echo $jogo['plataforma'] . "."; ?></p>
+                                <div class="tagsGame">
+                                    <ul>
+                                        <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    <?php
+                    }
+                }
+            break;
+            case 'win':
+                foreach ($parsedJson as $jogo) {
+                    if (in_array('win', $jogo) || in_array('win, mac', $jogo) || in_array('win, mac, linux', $jogo)){
+                    ?>
+            
+                        <div class="card">
+                            <div class="topCard">
+                                <h2 class="title"><?php echo $jogo['nome']; ?></h2>
+                                <span class="secondTitle"></span>
+                            </div>
+                            <div class="mediumCard"><img class="imgGame" src="<?php echo $jogo['imagem']; ?>" alt=""></div>
+                            <div class="bottomCard">
+                                <p class="bottomText"><b>Plataforma(s) suportada(s):</b> <?php echo $jogo['plataforma'] . "."; ?></p>
+                                <div class="tagsGame">
+                                    <ul>
+                                        <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    <?php
+                    }
+                }
+            break;
+            case 'linux':
+                foreach ($parsedJson as $jogo) {
+                    if (in_array('linux', $jogo) || in_array('win, linux', $jogo) || in_array('win, mac, linux', $jogo) || in_array('mac, linux', $jogo)){
+                    ?>
+            
+                        <div class="card">
+                            <div class="topCard">
+                                <h2 class="title"><?php echo $jogo['nome']; ?></h2>
+                                <span class="secondTitle"></span>
+                            </div>
+                            <div class="mediumCard"><img class="imgGame" src="<?php echo $jogo['imagem']; ?>" alt=""></div>
+                            <div class="bottomCard">
+                                <p class="bottomText"><b>Plataforma(s) suportada(s):</b> <?php echo $jogo['plataforma'] . "."; ?></p>
+                                <div class="tagsGame">
+                                    <ul>
+                                        <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    <?php
+                    }
+                }
+            break;
+        }
+    }else{
+        foreach ($parsedJson as $jogo) {
+            if (in_array($busca, $jogo)){
+            ?>
+    
+                <div class="card">
+                    <div class="topCard">
+                        <h2 class="title"><?php echo $jogo['nome']; ?></h2>
+                        <span class="secondTitle"></span>
+                    </div>
+                    <div class="mediumCard"><img class="imgGame" src="<?php echo $jogo['imagem']; ?>" alt=""></div>
+                    <div class="bottomCard">
+                        <p class="bottomText"><b>Plataforma(s) suportada(s):</b> <?php echo $jogo['plataforma'] . "."; ?></p>
+                        <div class="tagsGame">
+                            <ul>
+                                <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <?php
             }
         }
+    }
         ?>
     </div>
     <footer>
