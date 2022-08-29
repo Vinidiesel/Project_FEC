@@ -1,42 +1,61 @@
-<?php 
+<?php
 
-    $json_archives = scandir('./jsons/', SCANDIR_SORT_DESCENDING);
+$json_archives = scandir('./jsons/', SCANDIR_SORT_DESCENDING);
 
-    $path = './jsons/';
-    
-    $json = $path . $json_archives[0];
+$path = './jsons/';
 
-    $get_file_data = file_get_contents($json);
+$json = $path . $json_archives[0];
 
-    $parsedJson = json_decode($get_file_data, true);
+$get_file_data = file_get_contents($json);
+
+$parsedJson = json_decode($get_file_data, true);
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>WebScrap - PHP + Python</title>
 </head>
+
 <body>
     <br>
     <h1>Resultados da busca realizada às <?php echo date('H:i'); ?></h1>
-    <?php 
+    <h1>Foram encontrados: <?php echo count($parsedJson); ?> jogos!</h1>
+    <br>
+    <br>
+    <br>
+    <div class="content">
+        <?php
         foreach ($parsedJson as $jogo) {
         ?>
-        <div class="cards">
-            <img src="<?php echo $jogo['imagem']; ?>" alt="">
-            <hr>
-            <br>
-            <br>
-            <p class=""><?php echo $jogo['nome']; ?></p>
-        </div> 
-    <?php
+
+            <div class="card">
+                <div class="topCard">
+                    <h2 class="title"><?php echo $jogo['nome']; ?></h2>
+                    <span class="secondTitle"></span>
+                </div>
+                <div class="mediumCard"><img class="imgGame" src="<?php echo $jogo['imagem']; ?>" alt=""></div>
+                <div class="bottomCard">
+                    <p class="bottomText"><b>Plataforma(s) suportada(s):</b> <?php echo $jogo['plataforma'] . "."; ?></p>
+                    <div class="tagsGame">
+                        <ul>
+                            <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <?php
         }
-    ?>
-    
+        ?>
+    </div>
+    <footer>
+        Desenvolvido por Gustavo e Vinicius - 2022 - UNIARA
+    </footer>
 </body>
+
 </html>
