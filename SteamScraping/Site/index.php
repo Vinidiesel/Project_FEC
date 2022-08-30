@@ -1,65 +1,55 @@
 <?php
 
+// faz um scan no diretorio onde o main.py salvou a lista gerada, e seleciona o arquivo pela data mais recente
 $json_archives = scandir('./jsons/', SCANDIR_SORT_DESCENDING);
 
-$path = './jsons/';
+$path = './jsons/'; // variavel para definir o caminho onde está o arquivo JSON
 
-$json = $path . $json_archives[0];
+$json = $path . $json_archives[0]; // concatenando o caminho + o arquivo escaneado mais acima no código, para formar o caminho completo do json
 
-$get_file_data = file_get_contents($json);
+$get_file_data = file_get_contents($json); // pegando os dados do arquivo
 
-$parsedJson = json_decode($get_file_data, true);
+$parsedJson = json_decode($get_file_data, true); // decodificando o arquivo e gerando um array com os valores encontrados
 
+$plataforma = $_POST['plataformas'] ?? null;
+
+$busca = $_POST['busca'] ?? null;
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-</head>
-
+</head> 
+<script src="script.js" rel="text/javascript" defer></script>
 <body>
-<form method="post" action="">
-<label for="Plataformas"> Escolha uma plataforma</label>
-<select name="plataformas" id="plataformas">
-  <option value="todas">Todas</option>
-  <option value="mac">Mac</option>
-  <option value="win">Win</option>
-  <option value="linux">Linux</option>
-</select>
-<input type="submit" name="submit" value="Enviar"/>
+<br>
+<h1>Resultados da busca realizada às <?php date_default_timezone_set('America/Sao_Paulo'); echo date('H:i'); ?></h1>
+<h1>Foram encontrados: <?php echo count($parsedJson); ?> jogos!</h1>
+<center>
+<form class="formsFilter" method="POST" action="">
+    <label class="labelText" for="Plataformas"> Escolha uma plataforma</label>
+    <select name="plataformas" id="plataformas">
+        <option value="todas">Todas</option>
+        <option value="mac">Mac</option>
+        <option value="win">Win</option>
+        <option value="linux">Linux</option>
+    </select>
+    <input class="btnSubmit" type="submit" name="submit" value="Filtrar"/>
 </form>
-
-<form method="post" action="">
-<label for="site-search">Coloque o nome do jogo:</label>
-<input type="search" id="site-search" name="busca">
-<input type="submit" name="submit" value="Enviar"/>
-</form>
-
-<?php
-$plataforma = $_POST['plataformas'] ?? null;
-$busca = $_POST['busca'] ?? null;
-?>
-
-    <br>
-    <h1>Resultados da busca realizada às <?php
-    date_default_timezone_set('America/Sao_Paulo');
-     echo date('H:i'); ?></h1>
-    <h1>Foram encontrados: <?php echo count($parsedJson); ?> jogos!</h1>
-    <br>
-    <br>
-    <br>
-    <div class="content">
-        <?php
+</center>
+<br>
+<br>
+<div class="content">
+    <?php
         if ($busca == null){
             switch ($plataforma){
             case 'todas':
             foreach ($parsedJson as $jogo) {
-            ?>
+    ?>
                 <div class="card">
                     <div class="topCard">
                         <h2 class="title"><?php echo $jogo['nome']; ?></h2>
@@ -193,7 +183,7 @@ $busca = $_POST['busca'] ?? null;
     }
         ?>
     </div>
-    <footer>
+    <footer class="footer">
         Desenvolvido por Gustavo e Vinicius - 2022 - UNIARA
     </footer>
 </body>

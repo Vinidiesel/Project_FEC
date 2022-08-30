@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
 body {
-    background-image: radial-gradient(#245999,#1b2838);
+    background-image: radial-gradient(#245999, #1b2838);
     font-family: "Silkscreen", cursive;
+    min-width: 748px;
 }
 
 ul {
@@ -39,7 +40,6 @@ footer {
     height: 420px;
     margin-bottom: 15px;
     margin-right: 5px;
-    mask-repeat: no-repeat;
 }
 
 .card:hover {
@@ -75,19 +75,37 @@ footer {
     text-align: center;
 }
 
-/* .jogo p {
-    background: #d84cd8;
-    color: whitesmoke;
-    font-family: Arial, sans-serif;
-    padding: 5px 10px;
+.footer {
+    color: #FFF;
 }
 
-.jogo {
-    border: 1px solid red;
+.formsFilter {
+    background-color: #FFF;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 450px;
+    height: 30px;
+    text-align: center;
+    justify-items: center;
 }
 
-.content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-} */
+.labelText {
+    font-size: large;
+}
+
+.btnSubmit {
+    font-family: "Silkscreen", cursive;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    margin-top: 4px;
+    height: 22px;
+    background-color: #245999;
+}
+
+.btnSubmit:hover {background-color: #1d3c63;}
+
+#plataformas {
+    height: 22px;
+    font-family: "Silkscreen", cursive;
+}
