@@ -3,10 +3,14 @@ from bs4 import BeautifulSoup
 import requests
 from datetime import datetime
 
+# DISCLAIMER EVERY GAME THAT WERE DISPLAYED IN THIS ARE AVAILABLE AT STEAM IN THIS SECTION: https://store.steampowered.com/genre/Free%20to%20Play/
+# NON-PROFIT PROJECT JUST EDUCATIONAL PURPOSES
+
 
 # cria uma classe para estrutura do jogo capturado
 class Jogo:
-    def __init__(self, nome, imagem, plataforma, tags):
+    def __init__(self, link, nome, imagem, plataforma, tags):
+        self.link = link
         self.nome = nome
         self.imagem = imagem
         self.plataforma = plataforma
@@ -25,6 +29,8 @@ print("Gerando lista...")
 jogos = []
 # busca todos os itens de jogo dentro do html
 for item in soup.find_all("a", class_="tab_item"):
+    # pega o link do jogo
+    link_jogo = item.get('href')
     # pega o nome do jogo
     for nome in item.find_all("div", class_="tab_item_name" ):
         nome_jogo = nome.string
@@ -41,7 +47,7 @@ for item in soup.find_all("a", class_="tab_item"):
         tags.append(''.join(tag))
 
     # adiciona o jogo na lista
-    jogos.append(Jogo(nome_jogo, imagem_jogo, ', '.join(plataformas), ''.join(tags)))
+    jogos.append(Jogo(link_jogo, nome_jogo, imagem_jogo, ', '.join(plataformas), ''.join(tags)))
 
 print("Salvando arquivo JSON...")
 # gera arquivo json com a lista com os jogos

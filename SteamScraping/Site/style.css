@@ -58,16 +58,17 @@ footer {
 }
 
 .bottomCard {
-    padding: 20px;
+    padding: 15px;
+    text-align: center;
 }
 
 .bottomText {
-    text-align: center;
+    margin-top: 0px;
 }
 
-.tagsGame {
-    text-align: center;
-}
+/* .tagsGame {
+    
+} */
 
 .title {
     position: relative;
@@ -104,6 +105,10 @@ footer {
 }
 
 .btnSubmit:hover {background-color: #1d3c63;}
+
+.linkSpan {
+    margin-bottom: 2px;
+} 
 
 #plataformas {
     height: 22px;

@@ -1,4 +1,6 @@
 <?php
+// DISCLAIMER EVERY GAME THAT WERE DISPLAYED IN THIS ARE AVAILABLE AT STEAM IN THIS SECTION: https://store.steampowered.com/genre/Free%20to%20Play/
+// NON-PROFIT PROJECT JUST EDUCATIONAL PURPOSES
 
 // faz um scan no diretorio onde o main.py salvou a lista gerada, e seleciona o arquivo pela data mais recente
 $json_archives = scandir('./jsons/', SCANDIR_SORT_DESCENDING);
@@ -23,6 +25,9 @@ $busca = $_POST['busca'] ?? null;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- DISCLAIMER EVERY GAME THAT WERE DISPLAYED IN THIS ARE AVAILABLE AT STEAM IN THIS SECTION: https://store.steampowered.com/genre/Free%20to%20Play/
+         NON-PROFIT PROJECT JUST EDUCATIONAL PURPOSES -->
+
 </head> 
 <script src="script.js" rel="text/javascript" defer></script>
 <body>
@@ -63,6 +68,7 @@ $busca = $_POST['busca'] ?? null;
                                 <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
                             </ul>
                         </div>
+                        <span>Gostou? Então acesse a página oficial <a href="<?php echo $jogo['link']; ?>">aqui</a>!</span>
                     </div>
                 </div>
             <?php
@@ -85,6 +91,7 @@ $busca = $_POST['busca'] ?? null;
                                         <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
                                     </ul>
                                 </div>
+                                <span>Gostou? Então acesse a página oficial <a href="<?php echo $jogo['link']; ?>">aqui</a>!</span>
                             </div>
                         </div>
                     <?php
@@ -108,6 +115,7 @@ $busca = $_POST['busca'] ?? null;
                                         <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
                                     </ul>
                                 </div>
+                                <span>Gostou? Então acesse a página oficial <a href="<?php echo $jogo['link']; ?>">aqui</a>!</span>
                             </div>
                         </div>
                     <?php
@@ -131,6 +139,7 @@ $busca = $_POST['busca'] ?? null;
                                         <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
                                     </ul>
                                 </div>
+                                <span>Gostou? Então acesse a página oficial <a href="<?php echo $jogo['link']; ?>">aqui</a>!</span>
                             </div>
                         </div>
                     <?php
@@ -153,6 +162,7 @@ $busca = $_POST['busca'] ?? null;
                                     <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
                                 </ul>
                             </div>
+                            <span>Gostou? Então acesse a página oficial <a href="<?php echo $jogo['link']; ?>">aqui</a>!</span>
                         </div>
                     </div>
                 <?php
@@ -175,6 +185,7 @@ $busca = $_POST['busca'] ?? null;
                                 <li class="tagGame"><b>Tags:</b> <?php echo $jogo['tags'] . ","; ?></li>
                             </ul>
                         </div>
+                        <span class="linkSpan">Gostou? Então acesse a página oficial <a class="link" href="<?php echo $jogo['link']; ?>">aqui</a>!</span>
                     </div>
                 </div>
             <?php
@@ -184,7 +195,7 @@ $busca = $_POST['busca'] ?? null;
         ?>
     </div>
     <footer class="footer">
-        Desenvolvido por Gustavo e Vinicius - 2022 - UNIARA
+        Desenvolvido por Gustavo, Vinicius, Artur e Filipe - 2022 - UNIARA
     </footer>
 </body>
 
